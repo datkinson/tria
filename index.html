@@ -54,7 +54,7 @@ This robot was just a chassis kit (magician), which included the frame, two whee
 The code for this early 'prototype' was very simplistic and was along these sorts of lines:
 </p>
 <pre>
-<code>'''java
+<code>
 void loop(){
 if(sensor_range < value)
 	{
@@ -64,8 +64,26 @@ if(sensor_range < value)
 		motors.forward(1);
 	}
 }
-'''</code>
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+
+</code>
 </pre>
+<p>
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+</p>
 <p>
 This obviously did not work very well, but it did demonstrate a point.  That point was mainly just the fact that avoiding things that are only directly in front of you is a bad plan.<br />If something approaches diagonaly it can avoid the single sensor completely, and this is all asuming either the robot is actually moving in a straight line or everything in the environment is stationary.
 </p>
