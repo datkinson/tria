@@ -1,0 +1,106 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Fyp</title>
+  <meta name="description" content="Arduino based obstacle avoidance robot">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Fyp</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Arduino based obstacle avoidance robot</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+<!--
+          <a href="https://github.com/datkinson/fyp/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/datkinson/fyp/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/datkinson/fyp" class="code">View Fyp on GitHub</a>
+-->
+	  <h3 class="code" style="color:white">Welcome to the fyp Github page</h3>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+<p>This is the Git repository for Daniel Atkinson, a final yeal computer science undergraduate at Aberystwyth University</p>
+<p>The following content will be related to his final year project hence the name "fyp"</p>
+
+<h3>Basic Idea</h3>
+<p>The base goal of this project is to design, build and program a small wheeled robot.<br />
+This robot is to independantly move around freely within its environment and avoid the various obstacles it may face</p>
+
+<h3>Background</h3>
+<p>I tend to experiment with electronic components on a regular basis.  Due to this I try and make small working systems, originaly nothing more than a small timer or an audio amplifier.<br />
+Naturaly the progression from pure electronics was to move onto microcontrollers given my computer science background.<br />
+After making various projects using pic and arduino microcontrollers I decided to make an Arduino based robot.<br />
+This robot was just a chassis kit (magician), which included the frame, two wheels, two motors and a battery holder.  From this all I had to add was an Arduino microcontroller and a sensor, for this I used a sharpe IR (infra-red) sensor, mounted inside the shassis pointing out of the front.<br />
+The code for this early 'prototype' was very simplistic and was along these sorts of lines:
+</p>
+<pre>
+<code>void loop(){
+if(sensor_range < value)
+	{
+		motors.turn(random);
+	}else
+	{
+		motors.forward(1);
+	}
+}</code>
+</pre>
+<p>
+This obviously did not work very well, but it did demonstrate a point.  That point was mainly just the fact that avoiding things that are only directly in front of you is a bad plan.<br />If something approaches diagonaly it can avoid the single sensor completely, and this is all asuming either the robot is actually moving in a straight line or everything in the environment is stationary.
+</p>
+<p>
+The coding was then changed so that still just using the single front facing sensor, it could (very) roughly tell which direction (left or right) had the biggest empty space to move into.<br />This was done by having the robot 'wiggle', it turned small amounts left and right, taking sensor readings in each direction, as well as forwards.  After doing so, if there was something in range of the sensor straight ahead it would turn in the direction of the next biggest reading, and continued on in the same manner.
+</p>
+<p>This proved to be a significant improvement on the previous method but still the robot found its way into objects very quickly.  At this time I considered either adding more sensors or putting the existing sensor onto some servos, and scan the environment before attempting to move anywhere, this would be a more active method or determining a direction in which to move, unlike the mainly reactive method employed previous.</p>
+
+
+<h3>Support or Contact</h3>
+
+<p>Have any questions?<br />
+Have any suggestions?<br />
+You can email me at <a href="mailto:daa9@aber.ac.uk">daa9@aber.ac.uk</a> i'm always interested in what people have to say.</p>
+
+
+
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/datkinson" class="avatar"><img src="https://secure.gravatar.com/avatar/e53fbd6bae30a1de0a80d0f7b26b4d57?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/datkinson">datkinson</a> maintains <a href="https://github.com/datkinson/fyp">Fyp</a></p>
+
+
+      </div>
+      <div class="creds" style="display:none">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <!--<a href="https://github.com/datkinson/fyp/tarball/master" class="tar">tar</a><a href="https://github.com/datkinson/fyp/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>-->
+    <p class="name"></p>
+  </div>
+
+
+</body>
+</html>
