@@ -1,0 +1,63 @@
+\documentclass[11pt,fleqn,twoside]{article}
+\usepackage{makeidx}
+\makeindex
+\usepackage{palatino} %or {times} etc
+\usepackage{plain} %bibliography style 
+\usepackage{amsmath} %math fonts - just in case
+\usepackage{amsfonts} %math fonts
+\usepackage{amssymb} %math fonts
+\usepackage{lastpage} %for footer page numbers
+\usepackage{fancyhdr} %header and footer package
+\usepackage{mmp} 
+\usepackage{url}
+\usepackage{cite}
+
+\begin{document}
+
+\name{Daniel Atkinson}
+\userid{daa9}
+\projecttitle{Arduino based obstacle avoidance robot}
+\projecttitlememoir{Arduino based obstacle avoidance robot} %same as the project title or abridged version for page header
+\reporttitle{Outline Project Specification}
+\version{0.1}
+\docstatus{Draft}
+\modulecode{CS39440}
+\supervisor{Dave Barnes} % e.g. Neil Taylor
+\supervisorid{abc}
+
+%optional - comment out next line to use current date for the document
+%\documentdate{19th October 2012} 
+\mmp
+
+\setcounter{tocdepth}{3} %set required number of level in table of contents
+
+
+%==============================================================================
+\section{Project description}
+%==============================================================================
+
+
+%==============================================================================
+\section{Work to be tackled}
+%==============================================================================
+
+
+%==============================================================================
+\section{Project deliverables}
+%==============================================================================
+
+
+%==============================================================================
+\section{Initial bibliography}
+%==============================================================================
+
+This template uses BibTeX in a LaTeX document to manage the bibliography. To include citations, you 
+can use the \textbackslash cite command, for example \cite{NumericalRecipes}\cite{MarksPaper}\cite{FailBlog}\cite{kittenpic_ref}.  The bibliographic tools are not a requirement in this document, but you are welcome to use them.  
+
+% example of including
+\bibliographystyle{plain}
+\renewcommand{\refname}{}  % if you put text into the final {} on this line, you will get an extra title, e.g. References. This isn't necessary for the outline project specification. 
+\bibliography{mmp} % References file
+
+
+\end{document}
