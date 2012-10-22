@@ -44,19 +44,40 @@ When making an autonomous robot, regardless of its primary function, it will nee
 \subsection{Hardware}
 Some of the work to be done will be designing the hardware of the system.  This would have to take into consideration things like battery life expected for a 'decent' runtime, overall weight so that it is not over encumbered, size to make it practical and speed of operation as to not take too long and become useless or a hinderance to its purpose.
 \\The various pieces of hardware or even the various subsystems will need to be able to talk to each other reliably.
-\subsubsection{Hardware Research}
-Research will have to be done into the different ways this can be achieved.  Also a method to auto deploy updates to all the subsystems without any manual hardware reconfiguration each time will be useful.  This may require some additional initial hardware setup and will also need researching.
-\subsubsection{Testing}
-Due to the hardware component to this project planning detailed tests will be needed.  Automatic unit testing will be a problem and due to the varied sensor readings obtained in a real world environment as opposed to that of a simulation, testing each system in a real environment would be appropriate.
+\begin{itemize}
+\item Hardware Research
+\\Research will have to be done into the different ways this can be achieved.  Also a method to auto deploy updates to all the subsystems without any manual hardware reconfiguration each time will be useful.  This may require some additional initial hardware setup and will also need researching.
+\item Testing
+\\Due to the hardware component to this project planning detailed tests will be needed.  Automatic unit testing will be a problem and due to the varied sensor readings obtained in a real world environment as opposed to that of a simulation, testing each system in a real environment would be appropriate.
+\end{itemize}
 \subsection{Software}
 Software is the major component to this project where all of the sub-systems will be independant entities that do their own job and comminicate with the other systems to form a complete system.  These various systems may be running on seperate pieces of hardware and even writen in different languages, this must also be taken into account.
+\\Researching how to get these to communicate with each other is a key component to this project.  
+Three main things need to be researched for this project in regard to software.
+\begin{itemize}
+\item Subsystem interaction
+\\How to get the various hardware systems to talk to each others software systems.
+\item Sensor data
+\\How to get the data required from the hardware sensors and make that information useful.
+\item Processing
+\\Making good use of the data collected and using that to control the relevant components and perform their tasks.
+\end{itemize}
 
 
 %==============================================================================
 
 \section{Project deliverables}
 %==============================================================================
-
+\begin{itemize}
+\item Movement
+\\To be able to move around in its environment under its own power.
+\item Detect Object
+\\For the sensors to be able to detect if something is close to them.
+\item Avoid object
+\\Combine the movement and object detection subsystems to move around and not bump into obstacles.
+\item Find a path
+\\Use directional sensors to try and find a path the robot will fit through.
+\end{itemize}
 
 %==============================================================================
 \section{Initial bibliography}
