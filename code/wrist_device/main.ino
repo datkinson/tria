@@ -51,9 +51,9 @@ void checkButtons (){
       displayMenu();
      }else{
       activeButton=0;
-     } 
+     }
     }
-   } 
+   }
   }
 }
 void writeMessage(int line, String input_message)
@@ -64,7 +64,7 @@ void writeMessage(int line, String input_message)
     else{
       if(line==1){
         lcd_line1 = input_message;
-      }  
+      }
     }
     lcd.clear();
     lcd.setCursor(0,0);
@@ -102,9 +102,9 @@ void loop()
       time();
       break;
     case 5:
-      misc();
+      drive();
       break;
-    default: 
+    default:
     writeScreen("Error!","'Invalid Mode'");
   }
   delay(200);
