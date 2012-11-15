@@ -10,7 +10,7 @@
 \usepackage{fancyhdr} %header and footer package
 \usepackage{mmpv2}
 \usepackage{url}
-
+\usepackage{graphicx}
 % the following packages are used for citations - You only need to include one.
 %
 % Use the cite package if you are using the numeric style (e.g. IEEEannot).
@@ -31,7 +31,7 @@
 \modulecode{CS39440}
 \supervisor{Dave Barnes} % e.g. Neil Taylor
 \supervisorid{dpb}
-\wordcount{}
+%\wordcount{}
 
 %optional - comment out next line to use current date for the document
 %\documentdate{26th October 2011}
@@ -60,7 +60,17 @@ There are already lots of examples of work in this area.  Cameras can be used to
 \subsection{Technologies}
 
 \subsubsection{Sensors}
-
+\begin{itemize}
+\item LDR (light dependant resistor)
+\\Small resistor that changes its resistance depending on how much light it is exposed to.
+\\This could be used to detect if the robot is very close to bumping into an object and avoid it as the object would shadow some of the light from getting to the resistor, like a bump skirt.
+\item Camera
+\\A camera could be used to detect objects in front of it using various image processing techniques.  This method is good because it can potentialy map a relatively large area in a single image.  On the other hand it requires more processing to do which can be slow and result in having colided into an object or being stuck in a tight space before it has finished processing. A camera and the proccessing linked to using it for obstacle avoidance also increases power consumption, decreasing total runtime.
+\item Infra Red
+\\Used to detect distance from an object.  An emiter and a reciever linked to work like the light dependant resistor but using infra red instead of visible light.  Depending on intensity it can be used to detect distance.  These could be aranged all around the robot like a halo to detect objects from all sides.
+\item Sonar
+\\Again emiter, reciever style approach.  Emit an ultrasonic wave to bounce off of whatever is in  front of the emitter and then time how long it takes to be picked up by the reciever to determine how far away the object is.  This method comes with its drawbacks.  Due to how sound waves behave when they interact with the environment by bouncing off of it.  If the surface is angled or curved the sound can bounce away from the reciever, either not returning to it at all and giving a false reading of there beign nothing in front of it, or be bouncing off of multiple objects back to the reciever giving a false longer reading than there actually is.
+\end{itemize}
 \subsubsection{Actuators}
 
 \subsubsection{Materials}
@@ -79,12 +89,22 @@ Aluminium seems to be the best all round.  It is stong but not as heavy as steel
 \\In addition to the aluminium base I have decided to use plastic for mounting components to the base.  To make this easier I have built at 3D printer for fabicating custom components to specification.
 
 \subsubsection{Power Source}
-
-
+As this robot is intended to move around freely the powersource cannot be supplied by an ordinaly power outlet, it has to be self contained.  This means it will have to be a battery.
+\\The battery will have to be several cells or a single high output cell due to the size of motors I will be using.
+\\I will need as many Amp hours as possible for longer runtimes.  This could be achieved with several cels linked together in series (end to end) to increase voltage and link more together in parrallel (side by side) to increase amp hours (runtime).
+\\The lighter of the batteries would be to use lithium polymer (LiPo), these come in up to 11.2 volt packages which is not quite high enough to run the motors I have chosen.
+\\A lead acid battery is the other choice with high enough output.  A single battery can output ~12 volts and can be supplied with high amp hour ratings compared to the lithium ion alternatives.
+\\The chosen battery is rated at 12 volts and 4 amp hours.  It weighs more than the LiPo but is a more convenient package as it takes up less space on the robot.
 \subsubsection{3D Printer}
 As mentioned previously I have built a 3D printer.  This was not built exclusively to aid in this project but it was a factor in the puchase decision.
 \\The printer was not designed by me, it was bought as a kit.  The construction of the device aided as a good learning proccess and deepened my understanding of how 3d printing works.
 \\The build area of the printer is 200x200x260mm (length x width x depth) so it can produce fairly large components.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=5.0in] {figures/printer.jpg}
+        \caption{3D Printer}
+        \label{3D Printer}
+\end{figure}
 
 
 
@@ -101,9 +121,33 @@ Next I moved onto motors.  I had a 9 volt DC motor in the kit that came with my 
 \subsection{Prototype}
 To build the prototype I bought a small plastic chassis kit which inclided the chassis, two wheels, a caster for the rear 'wheel', two motors and two sets of gears for the motors.  All I needed to add was the microcontroler itself, a motor driver and a power source to get this running.
 %add picture of tria MK-I
-
+\begin{figure}[h]
+\centering
+        \includegraphics[width=5.0in] {figures/tria-mkI.jpg}
+        \caption{Plastic prototype}
+        \label{Plastic prototype}
+\end{figure}
 
 \subsection{Current Build}
+So far a basic chassis has been built out of aluminium.  This consisted of cutting a sheet of aluminium to the desired shape, cutting two more pieces, bending them at a 90 degree angle and cutting a hole in them to mount the robots motors too.  These two pieces were then bolted onto the underside of the larger piece.  A further piece was bolted onto the base plate extruding out of the back to support a rear wheel.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=5.0in] {figures/aluminium-chassis.jpg}
+        \caption{Aluminium chassis}
+        \label{Aluminium chassis}
+\end{figure}
+
+Using the 3d printer I made some mounting pieces to put electronic components onto the emtal chassis.  First something small and easy.  These are a sharpe infra red sensor mount and an ultrasonic sensor mount, the models for which I downloaded off of thingiverse.
+%add thingiverse reference
+\begin{figure}[h]
+\centering
+        \includegraphics[width=3.0in] {figures/printed-sensor-mounts.jpg}
+        \caption{Printed sensor mounts}
+        \label{Printed sensor mounts}
+\end{figure}
+
+
+
 
 \subsection{Utility}
 I put a small amount of time into building a portable device to interact with the main robot with main the purpose of reading live debug output.  This device was thought of because following aroudn the prototype with a laptop plugged into it became very anoying and quite awkward because if the robot made a tight turn it could get tangled up in the cable.
