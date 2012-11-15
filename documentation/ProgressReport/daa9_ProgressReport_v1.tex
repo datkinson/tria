@@ -56,7 +56,7 @@ I tend to experiment with electronic components on a regular basis.  Due to this
 \section{Current Progress}
 %==============================================================================
 \subsection{Related Works}
-
+There are already lots of examples of work in this area.  Cameras can be used to find a path between objects using different image proccessing techniques.  These require a fairly high level of processing due to the amount of data in each image.  This can also sometimes lead to mistaking visible patterns in the environment as obstacles or empty space when there is none, such as a mirror or a patterned carpet. %Insert citation of roborealm example
 \subsection{Technologies}
 
 \subsubsection{Sensors}
@@ -64,6 +64,19 @@ I tend to experiment with electronic components on a regular basis.  Due to this
 \subsubsection{Actuators}
 
 \subsubsection{Materials}
+I considered several materials for the robot chassis to be built of.
+\begin{itemize}
+\item Wood
+\\This would be the easiest material to make the chassis from as it is cheap, easy to cut into the intended shape and easy to screw components to.  Also it being non-condictive would help when mounting circuit boards to it.
+\item Plastic
+\\The lighter option.  Good due to its low weight but not as strong as wood and could bend or snap under load of many of the heavier components such as motors or a power source.  Also can be more expensive than wood to aquire and cut into the desired shape.  It is also non-conductive, again useful to mount conponents to.
+\item Steel
+\\A stonger material that can take much heavier loads but is itself rather heavy compared to wood and plastic.  This extra weight will put more stress on the motors used to drive to robot and may even need the motors to be more powerfull.  It is conductive which means more materials will be needed to make a non-conductive mounting platform for electronic components.
+\item Aluminium
+\\A much lighter metal than the Steel, but still heavier than wood or plastic of the same thickness.  It can take heavier loads than the plastic. It is conductive, making it useless to mount components onto without a mounting platform of some kind.
+\end{itemize}
+\subsubsection{Power Source}
+
 
 \subsection{Initial Learning}
 After choosing to use the arduino due to it having such a vast amount of support and examples I bought one and began to learn how to use it, using the arduino website itself as a guide (arduino.cc).  On here there are many tutorials with circuit diagrams and example code on how to get the basics working, which I found very helpful.
@@ -81,7 +94,6 @@ I put a small amount of time into building a portable device to interact with th
 %==============================================================================
 \section{Planning}
 %==============================================================================
-Text in here.
 
 
 \nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
