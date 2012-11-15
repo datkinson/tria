@@ -92,8 +92,15 @@ As mentioned previously I have built a 3D printer.  This was not built exclusive
 After choosing to use the arduino due to it having such a vast amount of support and examples I bought one and began to learn how to use it, using the arduino website itself as a guide (arduino.cc).  On here there are many tutorials with circuit diagrams and example code on how to get the basics working, which I found very helpful.
 \\The first things to learn were how to interact with the development board from my computer, then move onto getting it to output something.  Making lights blink was easy, and communicating over a serial connection was also relatively easy.  It got a bit harder when trying to recieve useful input from a sensor.
 \\The first input I recieved was from an Infra Red sensor, using this to determine how far an object was from the sensor itself.
+\\Something I discovered very quickly was that even if the sensor was not moved and the object it is pointing at is not mvoed the valus recieved from the sensor vary.  This 'noise' could cause a problem.  The obvious solution was to take a range of samples and average them to get a less eratic reading.
+\\To further add to that I may add a threshold and if the value from each reading it too different from the current average of a range of the most recent readings, then discard that value as to not push the average.
+
+Next I moved onto motors.  I had a 9 volt DC motor in the kit that came with my Arduino starter pack.  Getting the motor to turn was very easy, just apply current to one side and have the other linked to ground.  Simple.
+\\Getting the motor to turn both forwards and backwards seemed liek it would be harder.  But due to this motor runnign well off of 5 volts this was not an issue as an Arduino can output around 5 volts on its output pins and also link these pins to ground as well.  As such I can just switch which pin is ground and which is supplying voltage to change the direction of the motor.  Of course this will not be so easy for larger motors as the Arduino will not be able to supply enough voltage in this manner.  I will require a motor driver.
 
 \subsection{Prototype}
+To build the prototype I bought a small plastic chassis kit which inclided the chassis, two wheels, a caster for the rear 'wheel', two motors and two sets of gears for the motors.  All I needed to add was the microcontroler itself, a motor driver and a power source to get this running.
+%add picture of tria MK-I
 
 
 \subsection{Current Build}
