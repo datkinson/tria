@@ -23,7 +23,7 @@
   \newcommand{\showname}{#1}
 }
 
-\newcommand{\userid}[1]{ 
+\newcommand{\userid}[1]{
    \newcommand{\showuserid}{#1}
 }
 
@@ -71,10 +71,10 @@
   \newcommand{\showwordcount}{#1}
 }
 
-\newcommand{\helv}{ 
+\newcommand{\helv}{
 	%bold, 18point, 21point line spacing
 	\fontfamily{phv}\fontseries{b}\fontsize{18}{21}\selectfont
-} 
+}
 
 \newcommand{\mmp}{
 \pagestyle{fancy}
@@ -103,7 +103,7 @@
  Date & \mmpdocdate\\
  Revision & \showversion\\
  Status & \showdocstatus\\
- Word Count & \showwordcount\\
+% Word Count & \showwordcount\\
  \\
  \hline
  \vspace{0.1in}
@@ -123,7 +123,7 @@
 \newcommand{\makeheaders}{
 	\fancyhead{}
 	%Right on Odd numberd pages and Left on Even numbered pages
-	\fancyhead[LO,RE]{{\showreporttitle} - {\showversion} ({\showdocstatus})}	
+	\fancyhead[LO,RE]{{\showreporttitle} - {\showversion} ({\showdocstatus})}
 	\fancyhead[RO,LE]{{\showname} ({\showuserid})}
 	\fancyfoot{}
 	\fancyfoot[RO,LE]{{\thepage} of {\pageref{LastPage}}}

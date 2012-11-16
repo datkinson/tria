@@ -26,7 +26,7 @@
 \projecttitle{Arduino based obstacle avoidance robot}
 \projecttitlememoir{Obstacle avoidance robot} %same as the project title or abridged version for page header
 \reporttitle{Progress Report}
-\version{0.1}
+\version{0.6}
 \docstatus{Draft}
 \modulecode{CS39440}
 \supervisor{Dave Barnes} % e.g. Neil Taylor
@@ -57,6 +57,7 @@ I tend to experiment with electronic components on a regular basis.  Due to this
 %==============================================================================
 \subsection{Related Works}
 There are already lots of examples of work in this area.  Cameras can be used to find a path between objects using different image proccessing techniques.  These require a fairly high level of processing due to the amount of data in each image.  This can also sometimes lead to mistaking visible patterns in the environment as obstacles or empty space when there is none, such as a mirror or a patterned carpet. %Insert citation of roborealm example
+\cite{roborealm}
 \subsection{Technologies}
 
 \subsubsection{Sensors}
@@ -129,7 +130,9 @@ To build the prototype I bought a small plastic chassis kit which inclided the c
 \end{figure}
 
 \subsection{Current Build}
-So far a basic chassis has been built out of aluminium.  This consisted of cutting a sheet of aluminium to the desired shape, cutting two more pieces, bending them at a 90 degree angle and cutting a hole in them to mount the robots motors too.  These two pieces were then bolted onto the underside of the larger piece.  A further piece was bolted onto the base plate extruding out of the back to support a rear wheel.
+So far a basic chassis has been built out of aluminium and both the motor driver and the arduino have been mounted onto it.
+\subsubsection{Base}
+This consisted of cutting a sheet of aluminium to the desired shape, cutting two more pieces, bending them at a 90 degree angle and cutting a hole in them to mount the robots motors too.  These two pieces were then bolted onto the underside of the larger piece.  A further piece was bolted onto the base plate extruding out of the back to support a rear wheel.
 \begin{figure}[h]
 \centering
         \includegraphics[width=5.0in] {figures/aluminium-chassis.jpg}
@@ -137,6 +140,7 @@ So far a basic chassis has been built out of aluminium.  This consisted of cutti
         \label{Aluminium chassis}
 \end{figure}
 
+\subsubsection{Components}
 Using the 3d printer I made some mounting pieces to put electronic components onto the emtal chassis.  First something small and easy.  These are a sharpe infra red sensor mount and an ultrasonic sensor mount, the models for which I downloaded off of thingiverse.
 %add thingiverse reference
 \begin{figure}[h]
@@ -145,17 +149,47 @@ Using the 3d printer I made some mounting pieces to put electronic components on
         \caption{Printed sensor mounts}
         \label{Printed sensor mounts}
 \end{figure}
-
-
+\subsubsection{Chassis}
+In addition to the mounted components and the base chassis, some large wheels have been added so that it can actually drive.  These wheels are intended for off-road use and should handle and terrain the robot may end up trying to traverse.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=3.0in] {figures/tria-mkII.jpg}
+        \caption{Chassis with wheels}
+        \label{Chassis with wheels}
+\end{figure}
 
 
 \subsection{Utility}
 I put a small amount of time into building a portable device to interact with the main robot with main the purpose of reading live debug output.  This device was thought of because following aroudn the prototype with a laptop plugged into it became very anoying and quite awkward because if the robot made a tight turn it could get tangled up in the cable.
+\\This resulted in using some components I had lay around to build a temporary solution.  I used an Arduino fio, this has a built in LiPo battery socket, charging circuit and has an xbee module socket.  An xbee is a wireless radio popular with elecronics hobbyists for project such as this.  It provides a simple serial interface over wireless, exactly what I needed, Also a 2x16 character LCD display.
+\\It's not pretty but it works for a temporary/initial solution.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=3.0in] {figures/mobile-board.png}
+        \caption{Small wireless monitor}
+        \label{Small wireless monitor}
+\end{figure}
+I had the intention to have this mounted on my wrist so I would not have to constantly have to pick it up and put it down to use.  A glove was used to hold it to my wrist.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=4.0in] {figures/wrist-device.jpg}
+        \caption{Wrist mounted device}
+        \label{Wrist mounted device}
+\end{figure}
 
 %==============================================================================
 \section{Planning}
 %==============================================================================
-
+\subsection{Subsystems}
+The robots functions will be divided into subsystems/modules.
+\begin{itemize}
+\item Controller
+\\The controller unit will be a microcontroller that can recieve input from all the other devices and process what to do with the data and delegate tasks to the other systems to perform more complex tasks.
+\item Motors
+\\Due to the motors being steppers, they require constant control to get them to move.  Manually controllign the magnets inside the motors to get them to turn step by step or using an arduino library to it both require constant use of the microcontroller to do so.  This could be threaded or off-handed to another controller.  The off-handing approach is what I am planning.  This will take input from the control system.
+\item Sensors
+\\This system will constantly take sensor reading or when prompted to do so.  It will send this data to the controller to decide what to do with.
+\end{itemize}
 
 \nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
 
