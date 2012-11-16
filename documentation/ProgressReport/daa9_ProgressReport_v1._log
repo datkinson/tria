@@ -1,0 +1,122 @@
+Input File::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/latex/base/article.cls::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/base/article.cls::0::0::article 2007/10/19 v1.4h Standard LaTeX document class
+Input File::/usr/share/texmf-dist/tex/latex/base/fleqn.clo::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/latex/base/size11.clo::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/latex/base/makeidx.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/base/makeidx.sty::0::0::makeidx 2000/03/29 v1.0m Standard LaTeX package
+Input File::/usr/share/texmf-dist/tex/latex/psnfss/palatino.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/psnfss/palatino.sty::0::0::palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
+Input File::/usr/share/texmf-dist/tex/latex/carlisle/plain.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/carlisle/plain.sty::0::0::plain 1996/04/22 Plain TeX emulation (DPC)
+Input File::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::0::0::amsmath 2000/07/18 v2.13 AMS math features
+Input File::/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty::0::0::amstext 2000/06/29 v2.01
+Input File::/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty::0::0::amsbsy 1999/11/29 v1.2d
+Input File::/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty::0::0::amsopn 1999/12/14 v2.01 operator names
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::211::0::Redefining \frac.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::307::0::Redefining \overline.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::379::0::Redefining \ldots.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::382::0::Redefining \dots.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::467::0::Redefining \cdots.
+LaTeX Font Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::567::0::   Redeclaring font encoding OML.
+LaTeX Font Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::568::0::   Redeclaring font encoding OMS.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::2666::0::Redefining \[.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty::2667::0::Redefining \].
+Input File::/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty::0::0::amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+LaTeX Font Info::/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty::96::0::   Overwriting math alphabet `\mathfrak' in version `bold' U/euf/m/n --> U/euf/b/n.
+Input File::/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty::0::0::amssymb 2009/06/22 v3.00
+LaTeX Error::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::0::0::File `lastpage.sty' not found. |  Type X to quit or <RETURN> to proceed, or enter new name. (Default extension: sty)  Enter file name:  (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty \fancy@headwidth=\skip46 \f@ncyO@elh=\skip47 \f@ncyO@erh=\skip48 \f@ncyO@olh=\skip49 \f@ncyO@orh=\skip50 \f@ncyO@elf=\skip51 \f@ncyO@erf=\skip52 \f@ncyO@olf=\skip53 \f@ncyO@orf=\skip54 ) (./mmpv2.sty Package: mmpv2   (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty Package: geometry 2010/09/12 v5.6 Page Geometry  (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty Package: keyval 1999/03/16 v1.13 key=value parser (DPC) \KV@toks@=\toks19 ) (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO) Package ifpdf Info: pdfTeX in PDF mode is detected. ) (/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO) Package ifvtex Info: VTeX not detected. ) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional ) \Gm@cnth=\count99 \Gm@cntv=\count100 \c@Gm@tempcnt=\count101 \Gm@bindingoffset=\dimen113 \Gm@wd@mp=\dimen114 \Gm@odd@mp=\dimen115 \Gm@even@mp=\dimen116 \Gm@layoutwidth=\dimen117 \Gm@layoutheight=\dimen118 \Gm@layouthoffset=\dimen119 \Gm@layoutvoffset=\dimen120 \Gm@dimlist=\toks20 ) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Input File::/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty::0::0::Input File
+Input File::/home/dan/uni/tria/documentation/ProgressReport/mmpv2.sty::0::0::Input File
+Input Package::/home/dan/uni/tria/documentation/ProgressReport/mmpv2.sty::0::0::mmpv2 
+Input File::/usr/share/texmf-dist/tex/latex/geometry/geometry.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/geometry/geometry.sty::0::0::geometry 2010/09/12 v5.6 Page Geometry
+Input File::/usr/share/texmf-dist/tex/latex/graphics/keyval.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/graphics/keyval.sty::0::0::keyval 1999/03/16 v1.13 key=value parser (DPC)
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty::0::0::ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty::0::0::pdfTeX in PDF mode is detected. (ifpdf)
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty::0::0::ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty::0::0::VTeX not detected. (ifvtex)
+Input File::/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty::0::0::ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+Input File::/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty::0::0::graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Input File::/usr/share/texmf-dist/tex/latex/graphics/graphics.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/graphics/graphics.sty::0::0::graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Input File::/usr/share/texmf-dist/tex/latex/graphics/trig.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/graphics/trig.sty::0::0::trig 1999/03/16 v1.09 sin cos tan (DPC)
+Input File::/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg::0::0::Input File
+Package Info::/usr/share/texmf-dist/tex/latex/graphics/graphics.sty::91::0::Driver file: pdftex.def. (graphics)
+Input File::/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty::0::0::infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty::0::0::ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Input File::/usr/share/texmf-dist/tex/latex/url/url.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/url/url.sty::0::0::url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Input File::/usr/share/texmf-dist/tex/latex/cite/cite.sty::0::0::Input File
+LaTeX Info::/usr/share/texmf-dist/tex/latex/cite/cite.sty::302::0::Redefining \cite.
+LaTeX Info::/usr/share/texmf-dist/tex/latex/cite/cite.sty::373::0::Redefining \nocite.
+Input Package::/usr/share/texmf-dist/tex/latex/cite/cite.sty::0::0::cite 2010/09/10  v 5.3
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Checking defaults for OML/cmm/m/it.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   ... okay.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Checking defaults for T1/cmr/m/n.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   ... okay.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Checking defaults for OT1/cmr/m/n.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   ... okay.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Checking defaults for OMS/cmsy/m/n.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   ... okay.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Checking defaults for OMX/cmex/m/n.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   ... okay.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Checking defaults for U/cmr/m/n.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   ... okay.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::22::0::   Try loading font information for OT1+ppl.
+Input File::/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii::0::0::Input File
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty::0::0::pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty::0::0::ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty::0::0::LuaTeX not detected. (ifluatex)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty::0::0::LuaTeX not detected. (pdftexcmds)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty::0::0::\pdf@primitive is available. (pdftexcmds)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty::0::0::\pdf@ifprimitive is available. (pdftexcmds)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty::0::0::\pdfdraftmode found. (pdftexcmds)
+Input File::/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty::0::0::epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+Input File::/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty::0::0::grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty::0::0::kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Input File::/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty::0::0::kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty::0::0::kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Input File::/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty::0::0::Input File
+Input Package::/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty::0::0::etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package Info::/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty::0::0::Could not find \expanded. That can mean that you are not using pdfTeX 1.50 or that some package has redefined \expanded. In the latter case, load this package earlier. (etexcmds)
+Package Info::/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty::0::0::Graphics extension search list: [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE (grfext)
+Input File::/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg::0::0::Input File
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::38::0::   Try loading font information for OT1+phv.
+Input File::/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd::0::0::Input File
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::38::0::   Try loading font information for U+msa.
+Input File::/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd::0::0::Input File
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::38::0::   Try loading font information for U+msb.
+Input File::/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd::0::0::Input File
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::41::0::   Font shape `OT1/ppl/bx/n' in size <14.4> not available Font shape `OT1/ppl/b/n' tried instead.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::1::0::   Font shape `OT1/ppl/bx/n' in size <10.95> not available Font shape `OT1/ppl/b/n' tried instead.
+Reference LaTeX Warning::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::43::0::Reference `LastPage' on page 1 undefined.
+LaTeX Font Info::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::48::0::   Font shape `OT1/ppl/bx/n' in size <12> not available Font shape `OT1/ppl/b/n' tried instead.
+hbox Warning::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::51::0::Underfull \hbox (badness 10000) in paragraph at lines 51--54
+Reference LaTeX Warning::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::90::0::Reference `LastPage' on page 2 undefined.
+Reference LaTeX Warning::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::90::0::Reference `LastPage' on page 3 undefined.
+LaTeX Warning::/home/dan/uni/tria/documentation/ProgressReport/daa9_ProgressReport_v1.tex::0::0::There were undefined references.
