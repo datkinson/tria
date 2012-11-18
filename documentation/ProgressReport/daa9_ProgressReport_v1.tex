@@ -50,16 +50,40 @@ The aim of the project is to build and program an autonomous robot that can move
 \subsection{Background}
 I tend to experiment with electronic components on a regular basis.  Due to this I try and make small systems and get them working, originaly nothing more than a simple timer or an audio amplifier.  Naturaly the progression from this would be to move onto microcontrollers.
 \\I like to see things move, it keeps my interest.  The satisfaction I get when having started with nothing and going through to get something built and moving is what makes me think up new ideas, how can this be modified?, how can this be made better?.  A robotic project the perfect thing for me to do.
-\\
-
+\subsection{Possible Application}
+Many projects if not all in the field of autonomous robotics could benefit from some kind of obstacle avoidance system on board.  Even if it is just a failsafe to stop the device damaging itself on it environment as this would hinder its operation and may result in being very costly.  The easier robots to apply this kind of system to is one that does not rely on having a special shape for its operation \cite{snake} such as a snake robot.  Generaly blocky wheeled or track driven robots work best from this kind of system due to the amount of sensors required and their size is usualy fairly large.
 %==============================================================================
 \section{Current Progress}
 %==============================================================================
 \subsection{Related Works}
-There are already lots of examples of work in this area.  Cameras can be used to find a path between objects using different image proccessing techniques.  These require a fairly high level of processing due to the amount of data in each image.  This can also sometimes lead to mistaking visible patterns in the environment as obstacles or empty space when there is none, such as a mirror or a patterned carpet. %Insert citation of roborealm example
+There are already lots of examples of work in this area.  Cameras can be used to find a path between objects using different image proccessing techniques.  These require a fairly high level of processing due to the amount of data in each image.  This can also sometimes lead to mistaking visible patterns in the environment as obstacles or empty space when there is none, such as a mirror or a patterned carpet.
 \cite{roborealm}
-\subsection{Technologies}
+\\\\I put a small amount of time into building a portable device to interact with the main robot with main the purpose of reading live debug output.  This device was thought of because following aroudn the prototype with a laptop plugged into it became very anoying and quite awkward because if the robot made a tight turn it could get tangled up in the cable.
+\\This resulted in using some components I had lay around to build a temporary solution.  I used an Arduino fio, this has a built in LiPo battery socket, charging circuit and has an xbee module socket.  An xbee is a wireless radio popular with elecronics hobbyists for project such as this.  It provides a simple serial interface over wireless, exactly what I needed, Also a 2x16 character LCD display.
+\\It's not pretty but it works for a temporary/initial solution.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=3.0in] {figures/mobile-board.png}
+        \caption{Small wireless monitor}
+        \label{Small wireless monitor}
+\end{figure}
+\clearpage
+I had the intention to have this mounted on my wrist so I would not have to constantly have to pick it up and put it down to use.  A glove was used to hold it to my wrist.
+\begin{figure}[h]
+\centering
+        \includegraphics[width=4.0in] {figures/wrist-device.jpg}
+        \caption{Wrist mounted device}
+        \label{Wrist mounted device}
+\end{figure}
+\clearpage
 
+\subsection{Technologies}
+Several different technologies will be taken advantage of for the duration of this project.  Some hardware and some software.
+\subsubsection{Version Control}
+This is majorly usefull in any project the involes storing code or documents digitaly.  It is even usefull just as a backup tool, to be save from accidental deletions, from hard drive failure, or any number of unfortunate occurances as you can just re-download or revert changes you have made.
+\\A more useful way to use version control is to take advantage of its other features.  Features such as branching and merging.  These enable a person to make a branch of a project so that they can work on a specific feature independantly of the main project.  You may make multiple branches at the same time for working on different features and then when they are finished, merge them back into the main project.  Different version control systems ahve different algorithms that help with merging more inteliently, rather than asking you about every single line it is trying to put into a document.  Personaly I am using git as my version control system of choice.  This is mainly because I am more familiar with it than any of the other solutions and also because github\cite{github} %citation here%
+give university student free private repositories.
+\\Github also
 \subsubsection{Sensors}
 \begin{itemize}
 \item LDR (light dependant resistor)
@@ -159,24 +183,6 @@ In addition to the mounted components and the base chassis, some large wheels ha
 \end{figure}
 
 
-\subsection{Utility}
-I put a small amount of time into building a portable device to interact with the main robot with main the purpose of reading live debug output.  This device was thought of because following aroudn the prototype with a laptop plugged into it became very anoying and quite awkward because if the robot made a tight turn it could get tangled up in the cable.
-\\This resulted in using some components I had lay around to build a temporary solution.  I used an Arduino fio, this has a built in LiPo battery socket, charging circuit and has an xbee module socket.  An xbee is a wireless radio popular with elecronics hobbyists for project such as this.  It provides a simple serial interface over wireless, exactly what I needed, Also a 2x16 character LCD display.
-\\It's not pretty but it works for a temporary/initial solution.
-\begin{figure}[h]
-\centering
-        \includegraphics[width=3.0in] {figures/mobile-board.png}
-        \caption{Small wireless monitor}
-        \label{Small wireless monitor}
-\end{figure}
-I had the intention to have this mounted on my wrist so I would not have to constantly have to pick it up and put it down to use.  A glove was used to hold it to my wrist.
-\begin{figure}[h]
-\centering
-        \includegraphics[width=4.0in] {figures/wrist-device.jpg}
-        \caption{Wrist mounted device}
-        \label{Wrist mounted device}
-\end{figure}
-
 %==============================================================================
 \section{Planning}
 %==============================================================================
@@ -190,6 +196,13 @@ The robots functions will be divided into subsystems/modules.
 \item Sensors
 \\This system will constantly take sensor reading or when prompted to do so.  It will send this data to the controller to decide what to do with.
 \end{itemize}
+This group of basic subsystems linked together into one whole working system could be repesented by this UML (unified modeling language) diagram:
+\begin{figure}[h]
+\centering
+	\includegraphics[width=5.0in] {figures/simple-uml.png}
+	\caption{System diagram}
+	\label{System diagram}
+\end{figure}
 
 \nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
 
