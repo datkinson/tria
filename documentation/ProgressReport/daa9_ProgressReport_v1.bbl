@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{github}
+P.~H. Tom Preston-Werner, Chris~Wanstrath, ``Github.''
+
+
+\bibitem{rpi-python}
+Various, ``Getting started with raspberry pi gpio and python,''
+  \url{http://lwk.mjhosting.co.uk/?p=343}, Aug. 2012, accessed 19 October 2012.
+ \begin{quotation}\noindent How to use Python on a Raspberry Pi to control the
+  general purpose input output pins on the board \end{quotation}
+
+\bibitem{arduino-coms}
+------, ``I2c communication between two arduino boards,''
+  \url{http://absences.sofianaudry.com/node/10}, Aug. 2012, accessed 20 October
+  2012.
+ \begin{quotation}\noindent Details on how to get two arduino development
+  boards to communicate with each other, I intend to use this to be able to
+  offhand tasks to another board, such as driving motors independantly from the
+  sensor processing \end{quotation}
+
+\bibitem{roborealm}
+------, ``Robo realm,''
+  \url{http://www.roborealm.com/tutorial/Obstacle_Avoidance/}, Aug. 2012,
+  accessed October 2012.
+ \begin{quotation}\noindent Tutorial on obstacle avoidance using a camera
+  \end{quotation}
+
+\end{thebibliography}

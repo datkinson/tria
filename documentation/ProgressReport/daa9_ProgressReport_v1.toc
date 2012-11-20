@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Project Summary}{2}
+\contentsline {subsection}{\numberline {1.1}Aim}{2}
+\contentsline {subsection}{\numberline {1.2}Background}{2}
+\contentsline {subsection}{\numberline {1.3}Possible Application}{2}
+\contentsline {section}{\numberline {2}Current Progress}{2}
+\contentsline {subsection}{\numberline {2.1}Related Works}{2}
+\contentsline {subsection}{\numberline {2.2}Technologies}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Version Control}{5}
+\contentsline {subsubsection}{\numberline {2.2.2}Sensors}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Actuators}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}Materials}{6}
+\contentsline {subsubsection}{\numberline {2.2.5}Power Source}{6}
+\contentsline {subsubsection}{\numberline {2.2.6}3D Printer}{7}
+\contentsline {subsection}{\numberline {2.3}Initial Learning}{7}
+\contentsline {subsection}{\numberline {2.4}Prototype}{8}
+\contentsline {subsection}{\numberline {2.5}Current Build}{8}
+\contentsline {subsubsection}{\numberline {2.5.1}Base}{8}
+\contentsline {subsubsection}{\numberline {2.5.2}Components}{9}
+\contentsline {subsubsection}{\numberline {2.5.3}Chassis}{9}
+\contentsline {section}{\numberline {3}Planning}{10}
+\contentsline {subsection}{\numberline {3.1}Subsystems}{10}
+\contentsline {section}{Annotated Bibliography}{11}

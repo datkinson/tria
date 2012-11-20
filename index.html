@@ -71,10 +71,23 @@ if(sensor_range < value)
 This obviously did not work very well, but it did demonstrate a point.  That point was mainly just the fact that avoiding things that are only directly in front of you is a bad plan.<br />If something approaches diagonaly it can avoid the single sensor completely, and this is all asuming either the robot is actually moving in a straight line or everything in the environment is stationary.
 </p>
 <p>
-The coding was then changed so that still just using the single front facing sensor, it could (very) roughly tell which direction (left or right) had the biggest empty space to move into.<br />This was done by having the robot 'wiggle', it turned small amounts left and right, taking sensor readings in each direction, as well as forwards.  After doing so, if there was something in range of the sensor straight ahead it would turn in the direction of the next biggest reading, and continued on in the same manner.
-</p>
+The coding was then changed so that still just using the single front facing sensor, it could (very) roughly tell which direction (left or right) had the biggest empty space to move into.<br />This was done by having the robot 'wiggle', it turned small amounts left and right, taking sensor readings in each direction, as well as forwards.  After doing so, if there was something in range of the sensor straight ahead it would turn in the direction of the next biggest reading, and continued on in the same manner.</p>
 <p>This proved to be a significant improvement on the previous method but still the robot found its way into objects very quickly.  At this time I considered either adding more sensors or putting the existing sensor onto some servos, and scan the environment before attempting to move anywhere, this would be a more active method or determining a direction in which to move, unlike the mainly reactive method employed previous.</p>
-
+<h3>Current Progress</h3>
+<p>So far a more heavyweight chassis has been built.
+<br />Currently the main components consist of:
+<ul>
+<li>Aluminium base plate</li>
+<li>Rear caster wheel</li>
+<li>2 off-road type wheels</li>
+<li>2 12V stepper motors</li>
+<li>Motor driver</li>
+<li>Arduino Mega</li>
+</ul>
+<br />
+<a href="images/tria-mkII.jpg"><img src="images/thumbs/tria-mkII-thumb.jpg" /></a>
+<br />
+</p>
 
 <h3>Support or Contact</h3>
 
