@@ -1,7 +1,7 @@
-/* 
+/*
 Author: Daniel Atkinson
-Version: 0.2
-Controlling stepper motors via serial input 
+ Version: 0.2
+ Controlling stepper motors via serial input
  */
 #include <Stepper.h>
 
@@ -15,39 +15,46 @@ Stepper motorL(fullTurn, 40,41,42,43);
 Stepper motorR(fullTurn, 50,51,52,53);
 
 //Magic numbers
-int arbritraryMovement = 10;
+int arbritraryMovement = 30;
 
 void setup() {
   // initialize the serial port:
-  Serial.begin(9600);
+  Serial.begin(57600);
 }
 
 void loop() {
   checkSerial();
-  
+
 }
 
 void checkSerial(){
   if (Serial.available() > 0){
-     incomingData = Serial.read();
-     //Switch case to determine what to do with the serial data
-     switch (incomingData){
-       case 'f':
-         moveForward(arbritraryMovement);
-         break;
-       case 'l':
-         turnLeft(arbritraryMovement);
-         break;
-       case 'r':
-         turnRight(arbritraryMovement);
-         break;
-     }
+    incomingData = Serial.read();
+    //Switch case to determine what to do with the serial data
+    switch (incomingData){
+    case 'f':
+      Serial.println("Moving forward");
+      moveForward(arbritraryMovement);
+      break;
+    case 'l':
+      Serial.println("Turning left");
+      turnLeft(arbritraryMovement);
+      break;
+    case 'r':
+      Serial.println("Turning right");
+      turnRight(arbritraryMovement);
+      break;
+    case 't':
+      Serial.println("Testing");
+      test();
+      break;
+    }
   }
 }
 
 void moveForward(int distance){
-  for (int i = 0; i > distance; i++){
-     // step one step:
+  for (int i = 0; i < distance; i++){
+    // step one step:
     motorL.step(-1);
     motorR.step(-1);
     delay(10);
@@ -55,7 +62,7 @@ void moveForward(int distance){
 }
 
 void turnLeft(int distance){
-  for (int i = 0; i > distance; i++){
+  for (int i = 0; i < distance; i++){
     motorL.step(1);
     motorR.step(-1);
     delay(10);
@@ -63,9 +70,16 @@ void turnLeft(int distance){
 }
 
 void turnRight(int distance){
-  for (int i = 0; i > distance; i++){
+  for (int i = 0; i < distance; i++){
     motorL.step(-1);
     motorR.step(1);
     delay(10);
   }
 }
+
+void test(){
+  motorL.step(-100);
+  motorR.step(-100);
+  delay(20);
+}
+
