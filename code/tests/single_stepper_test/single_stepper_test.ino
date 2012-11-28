@@ -1,6 +1,6 @@
 /* 
 Author: Daniel Atkinson
-Version: 0.1
+Version: 0.2
 Testing a single stepper motor 
  */
 #include <Stepper.h>
@@ -9,7 +9,9 @@ Testing a single stepper motor
 const int fullTurn = 360/1.8;
 
 //Make a motor object using the stepper library on the correct pins
-Stepper motor(fullTurn, 50,51,52,53);            
+Stepper motorL(fullTurn, 40,41,42,43);
+Stepper motorR(fullTurn, 50,51,52,53);
+
 
 void setup() {
   // initialize the serial port:
@@ -18,8 +20,9 @@ void setup() {
 
 void loop() {
   // step one step:
-  motor.step(1);
+  motorL.step(-1);
+  motorR.step(-1);
   //Could delay here but it waits to finish the steps anyway so no need
-  //delay(10);
+  delay(10);
 }
 
