@@ -22,7 +22,8 @@ int prevButton = 0;
 int menuPosition = 0;
 int mode=0;//0=default, 1=menu
 boolean screen = true; //if screen needs writing to
-String menuItems[6]={"Splash Screen", "Menu", "Button Debug", "Serial Input", "Time", "Drive"};
+String menuItems[6]={
+  "Splash Screen", "Menu", "Button Debug", "Serial Input", "Time", "Drive"};
 
 void setup()
 {
@@ -35,77 +36,82 @@ void checkButtons (){
   prevButton=activeButton;
   if(analogRead(button1)>1000){
     activeButton=1;
-  }else{
-   if(analogRead(button2)>1000){
-    activeButton=2;
-   }else{
-    if (analogRead(button3)>1000){
-      activeButton=3;
-    }else{
-     if(analogRead(button4)>1000){
-      activeButton=4;
-      screen=true;
-      mode=1;
-      menuPosition=0;
-      activeButton=0;
-      displayMenu();
-     }else{
-      activeButton=0;
-     }
+  }
+  else{
+    if(analogRead(button2)>1000){
+      activeButton=2;
     }
-   }
+    else{
+      if (analogRead(button3)>1000){
+        activeButton=3;
+      }
+      else{
+        if(analogRead(button4)>1000){
+          activeButton=4;
+          screen=true;
+          mode=1;
+          menuPosition=0;
+          activeButton=0;
+          displayMenu();
+        }
+        else{
+          activeButton=0;
+        }
+      }
+    }
   }
 }
 void writeMessage(int line, String input_message)
-   {
-    if(line==0){
-      lcd_line0 = input_message;
-    }
-    else{
-      if(line==1){
-        lcd_line1 = input_message;
-      }
-    }
-    lcd.clear();
-    lcd.setCursor(0,0);
-    lcd.print(lcd_line0);
-    lcd.setCursor(0,1);
-    lcd.print(lcd_line1);
+{
+  if(line==0){
+    lcd_line0 = input_message;
   }
+  else{
+    if(line==1){
+      lcd_line1 = input_message;
+    }
+  }
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print(lcd_line0);
+  lcd.setCursor(0,1);
+  lcd.print(lcd_line1);
+}
 void writeScreen(String line0, String line1)
-  {
-    lcd.clear();
-    lcd.setCursor(0,0);
-    lcd.print(line0);
-    lcd.setCursor(0,1);
-    lcd.print(line1);
-  }
+{
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print(line0);
+  lcd.setCursor(0,1);
+  lcd.print(line1);
+}
 
 void loop()
 {
   checkButtons();
   //menu();
-    switch (mode) {
-    case 0:
-      splash();
-      break;
-    case 1:
-      menu();
-      break;
-    case 2:
-      buttonDebug();
-      break;
-    case 3:
-      printSerialLcd();
-      break;
-    case 4:
-      time();
-      break;
-    case 5:
-      drive();
-      break;
-    default:
+  switch (mode) {
+  case 0:
+    splash();
+    break;
+  case 1:
+    menu();
+    break;
+  case 2:
+    buttonDebug();
+    break;
+  case 3:
+    printSerialLcd();
+    break;
+  case 4:
+    time();
+    break;
+  case 5:
+    drive();
+    break;
+  default:
     writeScreen("Error!","'Invalid Mode'");
   }
   delay(200);
 }
+
