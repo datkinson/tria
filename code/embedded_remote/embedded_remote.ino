@@ -1,6 +1,5 @@
 #include <ctype.h>
 #include <stdio.h>
-#include <string.h>
 
 int buttonUp = 0;
 int buttonDown = 1;
@@ -11,7 +10,6 @@ int buttonBack = 5;
 
 int activeButton = 0;
 int prevButton = 0;
-int mode=0;//0=default, 1=menu
 
 void setup()
 {
@@ -25,20 +23,37 @@ void setup()
 }
 void checkButtons (){
   prevButton=activeButton;
-
+  if (digitalRead(buttonUp) == HIGH){
+    upPressed();
+  }
+  if (digitalRead(buttonDown) == HIGH){
+    downPressed();
+  }
+  if (digitalRead(buttonLeft) == HIGH){
+    leftPressed();
+  }
+  if (digitalRead(buttonRight) == HIGH){
+    rightPressed();
+  }
+  if (digitalRead(buttonSelect) == HIGH){
+    selectPressed();
+  }
+  if (digitalRead(buttonBack) == HIGH){
+    backPressed();
+  }
 }
 
 void upPressed(){
-
+  Serial.write('f');
 }
 void downPressed(){
-
+  Serial.write('b');
 }
 void leftPressed(){
-
+  Serial.write('l');
 }
 void rightPressed(){
-
+  Serial.write('r');
 }
 void selectPressed(){
 
@@ -50,27 +65,5 @@ void backPressed(){
 void loop()
 {
   checkButtons();
-  switch (mode) {
-  case 0:
-    splash();
-    break;
-  case 1:
-    menu();
-    break;
-  case 2:
-    buttonDebug();
-    break;
-  case 3:
-    printSerialLcd();
-    break;
-  case 4:
-    time();
-    break;
-  case 5:
-    drive();
-    break;
-  default:
-    writeScreen("Error!","'Invalid Mode'");
-  }
   delay(200);
 }
