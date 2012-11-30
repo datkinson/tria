@@ -28,7 +28,7 @@ void sonar1(){
   digitalWrite(trigPin1, LOW);
   duration = pulseIn(echoPin1, HIGH);
   distance = (duration/2) / 29.1;
-  if (distance >= 200 || distance <= 0){
+  if (distance >= 400 || distance <= 0){
     Serial.println("Out of range");
   }
   else {
@@ -44,7 +44,7 @@ void sonar2(){
   digitalWrite(trigPin2, LOW);
   duration = pulseIn(echoPin2, HIGH);
   distance = (duration/2) / 29.1;
-  if (distance >= 200 || distance <= 0){
+  if (distance >= 400 || distance <= 0){
     Serial.println("Out of range");
   }
   else {
