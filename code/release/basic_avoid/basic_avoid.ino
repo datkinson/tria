@@ -23,7 +23,7 @@ Stepper motorR(fullTurn, 50,51,52,53);
 int leftSonar, rightSonar;
 
 //Magic numbers
-int arbritraryMovement = 30;
+int arbritraryMovement = 100;
 int proximityThreshold = 20;
 
 void setup() {
@@ -38,12 +38,13 @@ void setup() {
 }
 
 void loop() {
-  moveForward(100);
+  moveForward(arbritraryMovement);
   detectProximity();
 }
 
 
 void moveForward(int distance){
+  Serial.println("Moving Forward");
   for (int i = 0; i < distance; i++){
     // step one step:
     motorL.step(-1);
@@ -62,6 +63,7 @@ void moveBackward(int distance){
 }
 
 void turnLeft(int distance){
+  Serial.println("Turning Left");
   for (int i = 0; i < distance; i++){
     motorL.step(1);
     motorR.step(-1);
@@ -70,6 +72,7 @@ void turnLeft(int distance){
 }
 
 void turnRight(int distance){
+  Serial.println("Turning Right");
   for (int i = 0; i < distance; i++){
     motorL.step(-1);
     motorR.step(1);
@@ -90,11 +93,15 @@ int getSonarReading(int trigger, int echo){
 void detectProximity(){
   leftSonar = getSonarReading(sonar1TrigPin, sonar1EchoPin);
   rightSonar = getSonarReading(sonar2TrigPin, sonar2EchoPin);
+  Serial.print("Left: ");
+  Serial.print(leftSonar);
+  Serial.print(" - Right: ");
+  Serial.println(rightSonar);
   if (leftSonar < proximityThreshold){
-    turnRight(100);
+    turnRight(arbritraryMovement);
   }
   if (rightSonar < proximityThreshold){
-    turnLeft(100);
+    turnLeft(arbritraryMovement);
   }
 }
 
