@@ -1,6 +1,6 @@
 /*
 Author: Daniel Atkinson
-Version: 0.4
+Version: 1
 Controlling stepper motors based on sonar sensor readings
 */
 #include <Stepper.h>
