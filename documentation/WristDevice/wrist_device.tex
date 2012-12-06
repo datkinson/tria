@@ -1,0 +1,57 @@
+% Type of the document is an article
+\documentclass{article}
+
+% use a graphics package for including images
+\usepackage{graphicx}
+
+% begin the document
+\begin{document}
+
+% give the document a title
+\title{Wrist Device Specification}
+
+% list the author of the document
+\author{Daniel Atkinson}
+
+% print the title, author, etc... here
+\maketitle
+
+% start the abstract
+\begin{abstract}
+
+Details on design, purpose and features of this device
+
+%end the abstract
+\end{abstract}
+
+
+\section{Idea}
+The idea is to create a lightweight, small and low powered device to be worn on the arm/wrist.
+This device should be able to:
+\begin{itemize}
+\item Display information via some form of physical screen
+\item Communicate over some form of wireless medium to another device
+\item Recieve user input via the device itself
+\end{itemize}
+\section{Design}
+\subsection{Display}
+A small number of LEDs could be used as indicator lights.  This would be a very low powered solution but hard for the user to understand what is happening and is extremely limited in what the device can inform the user of.
+\\An LCD panel to provide feedback via text would be a suitable solution.  To have one small enough for the size I intend thise device to be, a two line, sixteen character display would be suitable.  Thirty-two characters should be enough to display a reasonable amount of information and not take up a large amount fo space or add enough weight to make the device cumbersome.
+\\Another option would be a full graphical display.  I have chosen not to condsider this option due tot he added processing and power this would require, reducing the runtime of the device.
+\subsection{Processor}
+The processor will have to be small and low powered for this application, I have chosen to use an arduino board.  The arduino brand has a selection of boards in various sizes, this is the main reason I have chosen these as alot of the work has already been done for me and have been made using surface mount technology, drasticly reducing the size and weight of the device.
+\\There are a couple of board I have been testing for this device, the first being the Sparkfun Arduino pro micro, and the second an Arduino Fio.  Both board have many digital and analogue input/output pins to send and recieve signal via.
+\begin{itemize}
+\item Arduino Pro Micro
+\\A very small board with just an ATmega microproccessor, a voltage regulator and micro-USB for a serial interface as well as a source for power.
+
+\item Arduino Fio
+\\This is almost an all-in-one board for the things that I want, it has an ATmega microproccessor, a socket for an xBee wireless radio, and a lithium polymer battery plug with built in charging circuit.  It also has a mini-USB connector but this is only to suppy power to the board/charging circuit and not for serial communication.
+\\The downside to this board is that to download code onto it you have to have an FTDI cable to connect to the correct pins on the board.  Alternatively if you modify the xBee radio you can deploy code via another radio connected to a computer by making the device think it is just a USB connection.
+\end{itemize}
+\subsection{User Input}
+
+\subsection{Communication}
+
+% end the document
+\end{document}
