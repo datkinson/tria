@@ -18,7 +18,7 @@ int leftSonar, rightSonar;
 //Magic Numbers
 int arbritraryMovement = 100;
 int motorDelay = 1000;
-int proximityThreshold = 20;
+int proximityThreshold = 30;
 int defaultDelay = 10;
 
 void setup() {
