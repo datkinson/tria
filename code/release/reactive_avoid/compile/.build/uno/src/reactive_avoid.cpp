@@ -1,3 +1,8 @@
+#include <Arduino.h>
+void setup();
+void loop();
+void reactiveSonar(int left, int right);
+#line 1 "src/reactive_avoid.ino"
 /*
 Author: Daniel Atkinson
 Version: 1.1
@@ -16,9 +21,9 @@ int incomingData = 0;
 int leftSonar, rightSonar;
 
 //Magic Numbers
-int arbritraryMovement = 50;
+int arbritraryMovement = 100;
 int motorDelay = 1000;
-int proximityThreshold = 25;
+int proximityThreshold = 20;
 int defaultDelay = 10;
 
 void setup() {

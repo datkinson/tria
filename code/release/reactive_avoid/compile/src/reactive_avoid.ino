@@ -10,15 +10,16 @@ Controlling stepper motors based on sonar sensor readings in a reactive way
 #define sonar2EchoPin 5
 
 //initialise serial variable
-int incomingData = 0;
+#define incomingData 0
 
 //Global variables
-int leftSonar, rightSonar;
+#define leftSonar 0
+#define rightSonar 0
 
 //Magic Numbers
-int arbritraryMovement = 50;
+int arbritraryMovement = 100;
 int motorDelay = 1000;
-int proximityThreshold = 25;
+int proximityThreshold = 20;
 int defaultDelay = 10;
 
 void setup() {
