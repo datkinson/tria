@@ -1,0 +1,24 @@
+
+
+
+
+
+.build/uno/src/sonar.cpp : src/sonar.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/sonar.ino[0m
+	/usr/local/bin/ino preproc  -o $@ $^
+
+.build/uno/src/motors.cpp : src/motors.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/motors.ino[0m
+	/usr/local/bin/ino preproc  -o $@ $^
+
+.build/uno/src/reactive_avoid.cpp : src/reactive_avoid.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/reactive_avoid.ino[0m
+	/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/sonar.cpp .build/uno/src/motors.cpp .build/uno/src/reactive_avoid.cpp
+	@true
+
