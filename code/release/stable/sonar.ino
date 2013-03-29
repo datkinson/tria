@@ -5,7 +5,7 @@ int sonarUpper = 400;
 int getSonarReading(int trigger, int echo){
   int duration, distance;
   digitalWrite(trigger, HIGH);
-  delayMicroseconds(motorDelay);
+  delayMicroseconds(readingDelay);
   digitalWrite(trigger, LOW);
   duration = pulseIn(echo, HIGH);
   distance = (duration/2) / 29.1;

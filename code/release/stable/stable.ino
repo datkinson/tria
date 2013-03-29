@@ -4,10 +4,10 @@ Version: 1.1
 Controlling stepper motors based on sonar sensor readings in a reactive way
 */
 #include <Stepper.h>
-#define sonar1TrigPin 8
-#define sonar1EchoPin 7
-#define sonar2TrigPin 6
-#define sonar2EchoPin 5
+#define sonar1TrigPin 4
+#define sonar1EchoPin 5
+#define sonar2TrigPin 2
+#define sonar2EchoPin 3
 #define leftDirection 13
 #define rightDirection 11
 #define leftStep 12
@@ -22,7 +22,7 @@ int leftSonar, rightSonar, leftIr, rightIr, distance;
 
 //Magic Numbers
 int arbritraryMovement = 50;
-int motorDelay = 1000;
+int readingDelay = 20;
 int proximityThreshold = 25;
 int defaultDelay = 10;
 
